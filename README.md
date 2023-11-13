@@ -2,40 +2,37 @@
 
 # Introduction
 
-This project develops statistical models to predict the need for tracheostomy in infants with severe bronchopulmonary dysplasia (BPD).
+This project develops statistical models to predict the need for tracheostomy or death in infants with severe bronchopulmonary dysplasia (BPD).
 
-The data is from the BPD Collaborative Registry comprising infants <32 weeks gestational age with severe BPD from centers in the US and Sweden. It contains variables on demographics, respiratory support, and clinical status recorded at birth, 36 weeks, 44 weeks, and discharge.
+BPD is a chronic lung disease resulting from preterm birth and mechanical ventilation. Tracheostomy may benefit infants with severe BPD but also has risks. Accurately predicting tracheostomy need could enable targeted interventions to improve outcomes.
 
-The outcome is a composite tracheostomy/death variable, with 1 indicating tracheostomy or death occurred.
+The data originates from the Bronchopulmonary Dysplasia (BPD) Collaborative Registry, containing 996 infants <32 weeks gestational age with severe BPD from 9 centers in the US and Sweden.
 
 # Data Preprocessing
 
-Converted categorical variables into factors
+* Converted categorical variables into factors
 
-Corrected invalid entries
+* Corrected invalid entries
 
-Created composite outcome variable
+* Created composite outcome variable
 
-Removed duplicate rows
+* Removed duplicate rows
 
 # Key Findings
 
-Lasso regression and best subset logistic regression performed similarly
+* Lasso AUC: 0.900, Sensitivity: 0.855, Specificity: 0.796
 
-Both models had AUC ~0.9 for discrimination
+* Logistic Regression AUC: 0.884, Sensitivity: 0.766, Specificity: 0.852
 
-Lasso model more sensitive, logistic model more specific
+# Limitations
 
-# Limitations:
+* Multiple imputation may introduce bias
 
-High missingness
+* No interaction terms or random effects
 
-No interaction terms
-
-No mixed effects for clusters
 
 # Repository Files
 
-project2.rmd: R script for data preprocessing, EDA, modeling, evaluations
+Project2.rmd: R script for data preprocessing, EDA, modeling, evaluations
 
-project_report.pdf: Full project report
+Project2.pdf: Full project report
