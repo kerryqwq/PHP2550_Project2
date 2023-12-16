@@ -27,11 +27,6 @@ The data originates from the Bronchopulmonary Dysplasia (BPD) Collaborative Regi
 
 * Removed duplicate rows
 
-# Key Findings
-
-
-
-
 
 # Limitations
 
