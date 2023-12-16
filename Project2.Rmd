@@ -811,7 +811,7 @@ metrics_table <- data.frame(Measures = c("AUC", "Sensitivity", "Specificity","Th
                             weeks44_with_interaction = round(c(auc_lasso_int, sensitivity_lasso_int, specificity_lasso_int, threshold_lasso_int, BrierScore_lasso_int),3)
           )
 colnames(metrics_table) <- c(" ", "36 Week Model", "36 Week Model with Interactions", "44 Week Model", "44 Week Model with Interactions")
-kable(metrics_table, caption = "Model Evaluation Measures", align = "l",digits = 3)  %>%
+kable(metrics_table, caption = "Model Evaluation Measures", align = "l", booktabs = T, escape = T, digits = 3)  %>%
   kable_styling(latex_options = c("HOLD_position", "scale_down"))
 ```
 
