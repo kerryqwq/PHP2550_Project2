@@ -29,15 +29,15 @@ The data originates from the Bronchopulmonary Dysplasia (BPD) Collaborative Regi
 
 # Key Findings
 
-* Lasso AUC: 0.900, Sensitivity: 0.855, Specificity: 0.796
 
-* Logistic Regression AUC: 0.884, Sensitivity: 0.766, Specificity: 0.852
+
+
 
 # Limitations
 
-* Multiple imputation may introduce bias
+* Multiple imputations may introduce bias
 
-* No interaction terms or random effects
+* No random effects
 
 
 # Repository Files
