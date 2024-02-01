@@ -9,31 +9,6 @@ Methods: We proposed four models: 1) 36-Week Model Without Interactions; 2) 36-W
 
 Results: Overall, all four models demonstrate similarly high performance in predicting the need for tracheostomy in infants with severe bronchopulmonary dysplasia. The 44-week models have a higher AUC score, indicating better performance in distinguishing between the two outcomes. They also have lower Brier scores, suggesting more accurate probabilistic predictions. The 44-week models are more precise in predicting positive cases, while the 36-week models excel in predicting negative cases. In healthcare contexts, where correctly identifying true positives is often crucial due to the potential consequences of missing a serious condition, the 44-week models may be more appropriate.
 
-# Introduction
-
-This project develops statistical models to predict the need for tracheostomy or death in infants with severe bronchopulmonary dysplasia (BPD).
-
-BPD is a chronic lung disease resulting from preterm birth and mechanical ventilation. Tracheostomy may benefit infants with severe BPD but also has risks. Accurately predicting tracheostomy need could enable targeted interventions to improve outcomes.
-
-The data originates from the Bronchopulmonary Dysplasia (BPD) Collaborative Registry, containing 996 infants <32 weeks gestational age with severe BPD from 9 centers in the US and Sweden.
-
-# Data Preprocessing
-
-* Converted categorical variables into factors
-
-* Corrected invalid entries
-
-* Created composite outcome variable
-
-* Removed duplicate rows
-
-
-# Limitations
-
-* Multiple imputations may introduce bias
-
-* No random effects
-
 
 # Repository Files
 
