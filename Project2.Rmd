@@ -238,7 +238,6 @@ The second step in model development involves constructing the variable selectio
 This process is repeated for the four proposed models. For models that include interaction terms, we specify these terms in the data for the variable selection process to choose from.
 
 
-
 ```{r, echo=FALSE}
 # Multiple imputation for 36wks
 set.seed(1)
@@ -828,8 +827,6 @@ Furthermore, the 44-week models have smaller Brier scores compared to the 36-wee
 \section{Conclusion}
 
 Overall, all four models demonstrate similarly high performance in predicting the need for tracheostomy in infants with severe bronchopulmonary dysplasia. The 44-week models have a higher AUC score, indicating better performance in distinguishing between the two outcomes. They also have lower Brier scores, suggesting more accurate probabilistic predictions. The 44-week models are more precise in predicting positive cases, while the 36-week models excel in predicting negative cases. In healthcare contexts, where correctly identifying true positives is often crucial due to the potential consequences of missing a serious condition, the 44-week models may be more appropriate. Early detection can lead to timely interventions, reducing the risk of complications and improving patient outcomes. However, the choice of the best predictive model should depend on several factors related to the specific needs of researchers and practitioners. It's worth noting that the 36-week models contain less information than the 44-week models, which may impact their predictive capabilities.
-
-This project has several limitations. First, the data contains a substantial amount of missing values, which were filled using a multiple imputation process. While this approach helps in handling missing data, it may introduce biases or inaccuracies. The imputed values are estimates and may not perfectly represent the true missing values, potentially affecting the robustness of the findings. Second, we did not consider any interaction terms in our models.  Finally, we did not use mixed effects models, which allow for random effects to account for variability between different centers. This is important because individuals' measurements might be influenced by center-specific characteristics. Future work can be done by considering the mixed effects for model improvement.
 
 \newpage
 
